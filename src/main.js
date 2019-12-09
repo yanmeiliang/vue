@@ -2,35 +2,39 @@
 import Vue from 'vue'
 
 
-//1.1、导入路由的包
-import VueRouter from 'vue-router'
-//1.2、安装路由
-Vue.use(VueRouter);
+// //1.1、导入路由的包
+// import VueRouter from 'vue-router'
+// //1.2、安装路由
+// Vue.use(VueRouter);
 //1.3导入自己的router中的index.js路由模块
 import router from './router'
 
 
 
 //按需导入Mint-UI中的组件
-import {Header} from "mint-ui";
+import {Header,Swipe, SwipeItem } from "mint-ui";
 import 'mint-ui/lib/style.min.css'
 Vue.component(Header.name,Header);
-
-
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
+//2.1导入vue-resource
+import VueResource from 'vue-resource'
+//2.2安装vue-resource
+;
+Vue.use(VueResource);
 
 //导入MUI样式
 import './mui/css/mui.min.css'
 import './mui/css/icons-extra.css'
 
-
+//导入首页首页是app.vue
 import app from './App.vue'
-var vm=new Vue({
+let vm=new Vue({
   el:"#app",
   //1.4、挂载路由模块到实例上
   router,
   //渲染组件
   render:c=>c(app)},
-
 
 )
 
@@ -41,28 +45,26 @@ var vm=new Vue({
 
 
 
-//按需导入mint-ui中的组件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //1.1、导入mintui包
 // import MintUI from 'mint-ui'//导入所有组件
 // import 'mint-ui/lib/style.css'//导入组件样式
 //1.2、安装
 // Vue.use(MintUI)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 // import Vue from 'vue'
