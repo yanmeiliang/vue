@@ -12,10 +12,11 @@ import router from './router'
 
 
 //按需导入Mint-UI中的组件
-import {Header,Swipe, SwipeItem } from "mint-ui";
+import {Header,Swipe, SwipeItem ,Button} from "mint-ui";
 import 'mint-ui/lib/style.min.css'
 Vue.component(Header.name,Header);
 Vue.component(Swipe.name, Swipe);
+Vue.component(Button.name, Button);
 Vue.component(SwipeItem.name, SwipeItem);
 //2.1导入vue-resource
 import VueResource from 'vue-resource'

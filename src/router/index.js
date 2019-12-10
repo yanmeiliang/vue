@@ -9,13 +9,20 @@ import HomeContainer from "../components/tabbar/HomeContainer";
 import MemberContainer from "../components/tabbar/MemberContainer";
 import ShopContainer from "../components/tabbar/ShopContainer";
 import SearchContainer from "../components/tabbar/SearchContainer";
+import News from "../components/news/news";
+import NewsInfo from "../components/news/NewsInfo";
 //4、写路由表
 const routes=[
   {path:'/',redirect:'/home'},
-  {path:'/home',component:HomeContainer},
+  {
+    path:'/home',
+    component:HomeContainer,
+  },
   {path:'/member',component: MemberContainer},
   {path:'/shop',component:ShopContainer},
-  {path:'/search',component:SearchContainer}
+  {path:'/search',component:SearchContainer},
+   {path:'/home/newList',component:News},
+  {path:"/home/newsInfo/:id",component:NewsInfo}
 ];
 //5、把路由暴露出去并实例化路由表和路由相关的一些配置
 export default new Router({

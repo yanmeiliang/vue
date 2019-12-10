@@ -8,16 +8,20 @@
   </mt-swipe>
 <!--  九宫格--六宫格G:\库函数\mui-master\mui-master\examples\hello-mui\examples-->
   <ul class="mui-table-view mui-grid-view mui-grid-9 ">
-    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-4"><a href="#">
+    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-4">
+      <router-link to="/home/newList">
 <!--      <span class="mui-icon mui-icon-home"></span>-->
 <!--      <img src="../../lib/menu1.png " alt="">-->
       <img src="../../assets/menu1.png" alt="">
-      <div class="mui-media-body">新闻资讯</div></a>
+      <div class="mui-media-body">新闻资讯</div>
+      </router-link>
     </li>
-    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-4"><a href="#">
+    <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-4">
+      <a href="#">
 <!--      <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>-->
       <img src="../../assets/menu2.png" alt="">
-      <div class="mui-media-body">图片分享</div></a></li>
+      <div class="mui-media-body">图片分享</div>
+      </a></li>
     <li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-4"><a href="#">
 <!--      <span class="mui-icon mui-icon-chatbubble"></span>-->
       <img src="../../assets/menu3.png" alt="">
